@@ -1,35 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Business Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #1a1a1a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .card { text-align: center; width: 90%; max-width: 400px; padding: 20px; }
-        .profile-pic { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #d4af37; object-fit: cover; }
-        h1 { margin: 15px 0 5px; font-size: 24px; }
-        p { color: #aaa; margin-bottom: 25px; }
-        .btn { display: block; background: #d4af37; color: black; text-decoration: none; padding: 15px; border-radius: 30px; font-weight: bold; margin-bottom: 15px; transition: 0.3s; }
-        .btn:hover { background: #fff; }
-        .social-icons { margin-top: 20px; }
-        .social-icons a { color: white; margin: 0 10px; text-decoration: none; font-size: 20px; }
+        body {
+            background-color: #000000; /* Deep black background */
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #c5a35d; /* Gold border */
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #c5a35d; /* Gold text */
+            margin-top: 5px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: block;
+            background-color: #c5a35d; /* Gold buttons */
+            color: #000000;
+            text-decoration: none;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .social-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-container a {
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .social-container a:hover {
+            opacity: 1;
+            color: #c5a35d;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <img src="https://via.placeholder.com/150" class="profile-pic">
-        <h1>Your Name</h1>
-        <p>Your Job Title / Bio</p>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
         
-        <a href="mailto:your@email.com" class="btn">Email Me</a>
-        <a href="https://wa.me/yourphonenumber" class="btn">WhatsApp</a>
+        <h1>ANGELINE OOI</h1>
+        <div class="title">Relationship Manager</div>
+
+        <a href="tel:+123456789" class="btn">Call Now</a>
+        <a href="https://wa.me/123456789" class="btn">WhatsApp</a>
+        <a href="mailto:email@example.com" class="btn">Email</a>
         <a href="#" class="btn">Save Contact</a>
 
-        <div class="social-icons">
-            <a href="#">FB</a>
-            <a href="#">IG</a>
-            <a href="#">LN</a>
+        <div class="social-container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
     </div>
+
 </body>
 </html>
